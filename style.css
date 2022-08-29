@@ -102,6 +102,9 @@ body{
     margin: 0 40px;
     font-size: 16px;
 }
+.myName{
+    font-size: 32px;
+}
 .img_lg{
     width: 200px;
     margin: 0 40px 20px 40px;
@@ -327,6 +330,25 @@ body{
     background: rgba(169, 157, 183, 0.4);
     border: 1px solid #eee;
     transition: .5s;
+}
+
+#goTop{
+    position: fixed;
+    z-index: 90;
+    right: 30px;
+    bottom: 30px;
+    /* display: none; */
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    border: 1px solid rgba(169, 157, 183, 0.4);
+}
+.gotopIcon{
+    color: rgba(169, 157, 183, 0.6);
 }
 /* ----------------------------------------------- */
 
