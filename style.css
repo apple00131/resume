@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================== */
+*{
+    color: #333;
+}
+body{
+    font-family: Helvetica,"微軟正黑體",sans-serif;
+}
+
+/* 。。。。 header hero + nav 。。。。 */
+.a-hero{
+    width: 100%;
+    height: 520px;
+    background: #fff;
+    background-image: url(https://img.onl/KPPU2o);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+}
+.a-nav_list{
+    height: 60px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.a-nav_bar{
+    margin: 0 40px;
+    cursor: pointer;
+    flex: 20;
+}
+.a-nav_item{
+    margin: 0 20px;
+}
+.a-nav_link{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* 。。。。 header 簡介內容 。。。。 */
+.a-hero_contant{
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+}
+.a-hero_describtion{
+    text-align: justify;
+    width: 400px;
+    height: 180px;
+    line-height: 25px;
+    margin: 0 40px;
+    font-size: 16px;
+}
+.img_lg{
+    width: 200px;
+    margin: 0 40px 20px 40px;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 selection 統一標題 。。。。 */
+.a-title{
+    width: 100px;
+    margin: 64px auto;
+    padding: 10px;
+    border-bottom: 3px solid rgba(169, 157, 183, 0.4);
+    text-align: center;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 時間軸 。。。。 */
+.timeline{
+    position: relative;
+    width: 769px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: rgba(169, 157, 183, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 240px;
+    margin-left: -1px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 231px;
+    background-color: rgba(169, 157, 183, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    top: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.expertiseCont{
+    margin:20px 10px;
+}
+.contentTitle{
+    font-size: 16px;
+    line-height: 25px;
+}
+.contentCont{
+    font-size: 14px;
+}
+.left{
+    text-align: right;
+    position: absolute;
+    left: 60px;
+    top: -13px;
+}
+.right{
+    text-align-last: left;
+    position: relative;
+    top: -3px;
+    left: 290px;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 技術 。。。。 */
+.a-expertise{
+    width: 100%;
+    height: 400px;
+    margin-top: 64px;
+    padding-top: .01px;
+    background-color: rgba(169, 157, 183, 0.2);
+}
+.border-white{
+    border-bottom: 3px solid #fffafa;
+}
+/* 技術bar */
+.tool-bar{
+    display: flex;
+    margin: auto;
+}
+.tool-left, .tool-right{
+    flex: 1;
+}
+.tool-chart{
+    position: relative;
+    width: calc(100% - 150px);
+    left: 100px;
+}
+.tool-chart::after{
+    content: attr(data-title);
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+    right: calc(100% + 15px);
+}
+.bar{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 8px;
+    background-color: #fffafa;
+    border-radius: 10px;
+    border: 1px solid rgba(169, 157, 183);
+
+    overflow: hidden;
+}
+.bar span{
+    display: inline-block;
+    height: 15px;
+    background-color: rgba(169, 157, 183, 0.4);
+    width: 0%;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 project btn 。。。。 */
+.project-list{
+    display: flex;
+    justify-content: space-around;
+}
+.project-item{
+    width: 300px;
+}
+.project-link img{
+    width: 100%;
+    box-shadow: 4px 4px 10px 0px #999;
+}
+.project-link{
+    text-decoration: none;
+}
+.project-link p{
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.project-link p span{
+    font-weight: lighter;
+}
+.project-btn{
+    position: relative;
+    left: 110px;
+    width: 80px;
+    padding: 3px;
+    border-bottom: 1px solid rgba(169, 157, 183, 0.4);
+    margin-bottom: 30px;
+}
+/* hover */
+.project-link:hover .project-btn{
+    color: #999;
+    border-bottom: 3px solid rgba(169, 157, 183, 0.4);
+
+    transition: 1s;
+}
+.project-link:hover p{
+    font-weight: bold;
+    transition: .2s;
+}
+.project-link:hover p span{
+    font-weight: normal;
+    transition: .2s;
+}
+.project-link:hover img{
+    box-shadow: 4px 4px 10px 0px #666;
+    transition: .5s;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 Contact 。。。。 */
+.contact-card{
+    width: 500px;
+    height: 250px;
+    margin: 0 auto 64px auto;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.contactText{
+    margin: 20px;
+}
+.icon-sm{
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    padding: 10px;
+}
+.contact-card .btn{
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 footer 。。。。 */
+.a-footer{
+    width: 100%;
+    height: 64px;
+    background: rgba(169, 157, 183, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-footer p{
+    text-align: center;
+    padding: 10px;
+}
+.a-footer p span{
+    font-size: 12px;
+}
+
+/* ----------------------------------------------- */
+.btn{
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn:hover{
+    /* color: #fff; */
+    background: rgba(169, 157, 183, 0.4);
+    border: 1px solid #eee;
+    transition: .5s;
+}
+/* ----------------------------------------------- */
+
+/* 。。。。 電腦 。。。。 */
+@media (min-width:769px){
+    .pc-none{
+        display: none;
+    }
+    /* 時間軸 */
+    .right{
+        width: 500px;
+        margin: 0;
+    }
+    /* project */
+    .a-project{
+        margin: 100px;
+    }
+}
+
+/* 。。。。 平板 。。。。 */
+@media (max-width:768.99px){
+    .mb-none{
+        display: none;
+    }
+    .a-hero_contant{
+        flex-direction: column-reverse;
+    }
+    .a-nav_bar{
+        font-size: 22px;
+        margin: 0 20px;
+    }
+    .a-header{
+        position: relative;
+    }
+    .a-dropmenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 50px 25px;
+        width: 150px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 0 0 0 6px;
+        height: 250px;
+
+        display: none;
+    }
+    .a-dropmenu .a-nav_list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 0;
+    }
+    .a-dropmenu .a-nav_item{
+        line-height: 60px;
+        border-bottom: 1px solid #999;
+        width: 120px;
+        margin: 0;
+    }
+    .a-menuClose{
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border: 1.5px solid rgba(169, 157, 183, 0.4);
+        border-radius: 15px;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        cursor: pointer;
+    }
+    .a-menuClose:hover{
+        background: #999;
+    }
+    .a-menuClose::after, .a-menuClose::before{
+        content:'';
+        display: inline-block;
+        width: 25px;
+        height: 3px;
+        border-radius: 2px;
+        background: #333;
+        position: absolute;
+        top: 13px;
+        right: 2px;
+        transform: rotate(45deg);
+    }
+    .a-menuClose::after{
+        transform: rotate(-45deg);
+    }
+
+    /* 時間軸 */
+    .timeline{
+        width: 80%;
+    }
+    .left{
+        text-align-last: left;
+        position: relative;
+        left: 120px;
+        top: -13px;
+    }
+    .right{
+        left: 120px;
+        overflow-y: hidden;
+        top: -15px
+    }
+    .timeline::before{
+        left: 80px;
+    }
+    .timeline::after{
+        left: 71px;
+    }
+    .expertiseCont{
+        margin: 10px;
+        width: 80%;
+    }
+    /* project */
+    .project-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-link img{
+        width: 250px;
+        margin: 0 25px;
+    }
+    .project-link p{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    /* contact */
+    .contact-card{
+        width: 80%;
+        height: 310px;
+    }
+}
+
+/* 。。。。 手機 。。。。 */
+@media (max-width:450px){
+    .a-nav_bar{
+        font-size: 22px;
+        margin: 0 20px;
+    }
+    .a-hero{
+        height: 560px;
+    }
+    .a-hero_describtion{
+        width: 80%;
+    }
+    /* 時間軸 */
+    .timeline{
+        width: 80%;
+    }
+    .left{
+        left: 30px;
+        top: 0px;
+    }
+    .right{
+        left: 30px;
+        top: 5px;
+    }
+    .timeline::before{
+        left: 20px;
+    }
+    .timeline::after{
+        left: 11px;
+    }
+    .expertiseCont{
+        margin: 0 0 10px 0px;
+        width: 90%;
+    }
+    /* 技術 */
+    .tool-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .a-expertise{
+        height: 550px;
+    }
+}
+
+@media (max-width:400px){
+    .a-nav_bar{
+        font-size: 22px;
+        margin: 0 20px;
+    }
+    .a-hero{
+        height: 100vh;
+    }
+    .img_lg{
+        width: 50%;
+        margin: 50px 0;
+    }
+    .a-hero_describtion{
+        width: 70%;
+    }
+}
