@@ -61,14 +61,23 @@ body{
     height: 520px;
     background: rgba(169, 157, 183, 0.4);
     /* background-image: url(https://img.onl/KPPU2o); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     opacity: 0;
 }
+.a-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.a-logo{
+    width: 150px;
+}
 .a-nav_list{
-    height: 60px;
-    padding-right: 20px;
+    height: 100px;
+    /* padding-right: 20px; */
     display: flex;
     justify-content: end;
     align-items: center;
@@ -95,7 +104,7 @@ body{
 
 /* 。。。。 header 簡介內容 。。。。 */
 .a-hero_contant{
-    height: 460px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,7 +442,7 @@ body{
         border-radius: 15px;
         position: absolute;
         right: 30px;
-        top: 15px;
+        top: 30px;
         cursor: pointer;
     }
     .a-menuClose:hover{
