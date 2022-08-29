@@ -16,7 +16,6 @@ $(document).ready(function(){
     })
 
     $(".a-nav_bar").click(function(){
-        // $(this).css("display",'none');
         $(".a-dropmenu").css('display','block');
     })
     $(".a-menuClose").click(function(){
