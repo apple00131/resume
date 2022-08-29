@@ -353,9 +353,20 @@ body{
     background: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     border: 1px solid rgba(169, 157, 183, 0.4);
+    transition: 0.5s;
 }
 .gotopIcon{
     color: rgba(169, 157, 183, 0.6);
+}
+#goTop:hover{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(169, 157, 183, 0.2);
+    transition: 0.5s;
+}
+#goTop:hover .gotopIcon{
+    color: #333;
 }
 /* ----------------------------------------------- */
 
